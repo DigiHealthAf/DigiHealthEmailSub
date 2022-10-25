@@ -67,6 +67,8 @@ html, body{
 
 }
 
+.contain {object-fit: contain;}
+
 .hero{
     /* border: solid 1px red; */
     width: 100%;
@@ -117,6 +119,8 @@ html, body{
 
 .hero-image-one{
     position: absolute;
+    /* width: 406px;
+    height: 406px; */
     width: 463px;
     height: 554px;
     top: -100px;
@@ -128,6 +132,8 @@ html, body{
     position: absolute;
     top: 70px;
     right: 220px;
+    /* width: 406px;
+    height: 406px; */
     
 }
 
@@ -255,6 +261,45 @@ border: none;
     background: #7a95eb;
 }
 
+.bottom-patterns{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.bottom-left{
+   position: absolute;
+   right:500px;
+   top: 55px; 
+   opacity: 0.5;
+}
+
+.bottom-right{
+   position: absolute;
+   left:500px;
+   top: 30px; 
+
+}
+
+.top-patterns{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.top-left{
+   position: absolute;
+   right:500px;
+   bottom: 0px; 
+}
+
+.top-right{
+   position: absolute;
+   left:500px;
+   bottom: 60px; 
+
+}
+
 
 .footer{
     /* border: solid; */
@@ -264,6 +309,14 @@ border: none;
     /* position: fixed;
     bottom: 0; */
  
+}
+
+.mobile-top-patterns{
+    display: none;
+}
+
+.mobile-bottom-patterns{
+    display: none;
 }
 
 
@@ -346,12 +399,27 @@ margin: auto;
 
 }
 
-@media only screen and (max-width:1280px){
-    
+@media only screen and (max-width: 1392px) {
+
+
+    .decor-one {
+        left: 50px;
+  
+      }
+
+    .decor-two{
+     
+        top: 150px;  
+        right:0px;
+
+    }
+
     .hero-image-one{
         position: absolute;
-        width: 363px;
-        height: 454px;
+        width: 500px;
+        height: 500px;
+        /* width: 463px;
+        height: 554px; */
         top: -100px;
         right: 0px;
         
@@ -361,44 +429,57 @@ margin: auto;
         position: absolute;
         top: 70px;
         right: 220px;
-        width: 363px;
-        height: 454px;
+        width: 500px;
+        height: 500px;
         
     }
+
+    .bottom-left{
+        position: absolute;
+        right:350px;
+        top: 55px; 
+        opacity: 0.5;
+     }
+     
+     .bottom-right{
+        position: absolute;
+        left:400px;
+        top: 30px; 
+     
+     }
+     
+     .top-patterns{
+         display: flex;
+         justify-content: space-around;
+         position: relative;
+     }
+     
+     .top-left{
+        position: absolute;
+        right:400px;
+        bottom: 0px; 
+     }
+     
+     .top-right{
+        position: absolute;
+        left:400px;
+        bottom: 70px; 
+     
+     }
+
+
 }
 
 
-@media only screen and (max-width:1024px){
 
-    .background-logo h4{
-        font-family: Nexa-Bold;
-        font-weight: 600;
-        font-size: 40px;
-        line-height: 140%;
-        width: 519px;
-        height: 168px;
-    }
-    
-    .background-logo h4 span{
-        color: #4F76F7;
-        
-    }
-    
-    .background-logo p{
-        font-family: Nexa-Regular;
-        font-style: normal;
-        font-size: 20px;
-        line-height: 30px;
-        width: 395px;
-        height: 111px;
-        margin-top: 20px;
-    }
- 
+@media only  screen and (max-width:1300px){
     
     .hero-image-one{
         position: absolute;
-        width: 363px;
-        height: 454px;
+        /* width: 406px;
+        height: 406px; */
+        width: 463px;
+        height: 554px;
         top: -100px;
         right: 0px;
         
@@ -408,13 +489,14 @@ margin: auto;
         position: absolute;
         top: 70px;
         right: 220px;
-        width: 363px;
-        height: 454px;
+        /* width: 406px;
+        height: 406px; */
         
     }
 }
 
-@media only screen and (max-width:970px){
+
+@media only screen and (max-width:1350px){
       
     .hero{
        
@@ -476,146 +558,7 @@ margin: auto;
  
      .background-logo h4{
        
-         font-size: 6vw;
-         line-height: 120%;
-         width: 100%;
-         height: 168px;
-     }
-     
-     .background-logo p{
-         font-size: 3vw;
-         line-height: 30px;
-         width: 100%;
-         height: 211px;
-         margin-top: 20px;
-     }
- 
-    
- 
-     
-     
-       .hero-image-one{
-         display: none;
-       }
- 
- 
- 
-     .subscribe-box h5{
-        
-         font-size: 5vw;
-         line-height: 30px;
-         width: 100%;
-         height: 62px;
-     }
-     
-     .subscribe-box p{
-     
-      
-         font-size: 2.7vw;
-         line-height: 25px;
-         width: 100%;
-         height: 56px;
-         margin-bottom: 30px;
- 
-     
-     
-     }
-     
-     .form input{
-     width: 100%;
-     display: block;
-     margin-bottom: 20px;
-     }
- 
-     .form button{
- 
-         width: 100%;
-         
-         }
- 
- 
-         .footer .top-footer{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 20px;
-            gap: 20px;
-            /* width: 90%; */
-            /* margin: auto; */
-        
-        }
-    
-        .contact{
-       
-            display: flex;
-            margin-left: 10%;
-        }
-      
-}
-
-@media only screen and (max-device-width: 1399px){ 
-    .hero{
-       
-        width: 100%;
-        /* border: 1px solid red; */
- 
-         
-     }
- 
-     .decor-three{
-         margin-left: 0;
-         margin-right: 0;
-         left: 30px;
-         right: 0;
-         top: 500px;
-     
-     }
- 
-     .decor-four{
-         display: none;
-     }
- 
-     .decor-five{
-         width: 200px ;
-         position: absolute;
-         height: auto;
-         right: 150px;
-         top: 790px;
-         z-index: 0;
-     }
- 
-     .subscribe-section{
-         margin-top: 500px;
-     }
- 
-     .background-logo{
-         padding-left: 40px !important;
-         padding-right: 40px !important;
-        text-align: center;
-         width: 100% !important;
-         /* border: solid; */
-         background-image: none !important;
-     }
- 
-     .hero-image-two{
-         top: 500px;
-         margin-left: auto;
-         margin-right: auto;
-         left: 0;
-         right: 0;
-         display: block;
-         height: auto;
-         max-width: 100%;
-         width: 475px;
-         z-index: 3;  
-      }
- 
- 
- 
-     .background-logo h4{
-       
-         font-size: 48px;
+         font-size: 45px;
          line-height: 120%;
          width: 100%;
          height: 168px;
@@ -626,9 +569,35 @@ margin: auto;
          line-height: 30px;
          width: 100%;
          height: 211px;
-         margin-top: 10px;
+         margin-top: 20px;
+     }
+
+     .bottom-left{
+        right:250px;
+        top: 55px; 
+     }
+     
+     .bottom-right{
+        left:250px;
+        top: 30px; 
+     
+     }
+     
+     
+     .top-left{
+        right:250px;
+        bottom: 0px; 
+     }
+     
+     .top-right{
+        left:250px;
+        bottom: 60px; 
+     
      }
  
+    
+ 
+     
      
        .hero-image-one{
          display: none;
@@ -636,55 +605,58 @@ margin: auto;
  
  
  
-     .subscribe-box h5{
+       .subscribe-box h5{
         
-         font-size: 48px;
-         line-height: 30px;
-         width: 100%;
-         height: 62px;
-     }
-     
-     .subscribe-box p{
-     
-      
-         font-size: 28px;
-         line-height: 25px;
-         width: 100%;
-         height: 56px;
-         margin-bottom: 30px;
- 
-     
-     
-     }
-     
-     .form input{
-     width: 100%;
-     display: block;
-     margin-bottom: 20px;
-     }
- 
-     .form button{
- 
-         width: 100%;
-         
-         }
- 
- 
-         .contact{
+        font-size: 45px;
+        line-height: 30px;
+        width: 100%;
+        height: 62px;
+    }
     
-             margin-left: 0% !important;
-         }
+    .subscribe-box p{
+    
+     
+        font-size: 20px;
+        line-height: 25px;
+        width: 100%;
+        height: 56px;
+        margin-bottom: 30px;
+
+    
+    
+    }
+    
+
+
+        .footer .top-footer{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           margin-bottom: 20px;
+           gap: 20px;
+           /* width: 90%; */
+           /* margin: auto; */
+       
+       }
+   
+       .contact{
+      
+           display: flex;
+           margin-left: 8%;
+       }
+
+       
+      
 }
+
 
 @media only screen and (max-width: 912px) {
 
     
-    .hero{
-       
+    .hero{    
        width: 100%;
-       /* border: 1px solid red; */
-
-        
+       /* border: 1px solid red; */ 
     }
 
     .decor-three{
@@ -708,6 +680,29 @@ margin: auto;
         top: 790px;
         z-index: 0;
     }
+
+    .bottom-left{
+        right:200px;
+        top: 50px; 
+     }
+     
+     .bottom-right{
+        left:200px;
+        top: 30px; 
+     
+     }
+     
+     
+     .top-left{
+        right:200px;
+        bottom: 0px; 
+     }
+     
+     .top-right{
+        left:200px;
+        bottom: 60px; 
+     
+     }
 
     .subscribe-section{
         margin-top: 500px;
@@ -739,14 +734,14 @@ margin: auto;
 
     .background-logo h4{
       
-        font-size: 6vw;
+        font-size: 48px;
         line-height: 120%;
         width: 100%;
         height: 168px;
     }
     
     .background-logo p{
-        font-size: 3vw;
+        font-size: 20px;
         line-height: 30px;
         width: 100%;
         height: 211px;
@@ -762,10 +757,9 @@ margin: auto;
       }
 
 
-
     .subscribe-box h5{
        
-        font-size: 5vw;
+        font-size: 48px;
         line-height: 30px;
         width: 100%;
         height: 62px;
@@ -774,7 +768,7 @@ margin: auto;
     .subscribe-box p{
     
      
-        font-size: 2.7vw;
+        font-size: 20px;
         line-height: 25px;
         width: 100%;
         height: 56px;
@@ -784,7 +778,7 @@ margin: auto;
     
     }
     
-    .form input{
+    /* .form input{
     width: 100%;
     display: block;
     margin-bottom: 20px;
@@ -794,7 +788,7 @@ margin: auto;
 
         width: 100%;
         
-        }
+        } */
 
 
         .contact{
@@ -832,6 +826,7 @@ margin: auto;
         
     }
 
+  
     .decor-three{
         margin-left: 0;
         margin-right: 0;
@@ -881,17 +876,41 @@ margin: auto;
      }
 
 
+     .bottom-left{
+        right:200px;
+        top: 20px; 
+     }
+     
+     .bottom-right{
+        left:200px;
+        top: 20px; 
+     
+     }
+     
+     
+     .top-left{
+        right:200px;
+        bottom: 0px; 
+     }
+     
+     .top-right{
+        left:200px;
+        bottom: 50px; 
+     
+     }
+
+
 
     .background-logo h4{
       
-        font-size: 6vw;
+        font-size: 48px;
         line-height: 120%;
         width: 100%;
         height: 168px;
     }
     
     .background-logo p{
-        font-size: 3vw;
+        font-size: 20px;
         line-height: 30px;
         width: 100%;
         height: 211px;
@@ -1026,6 +1045,30 @@ margin: auto;
      }
 
 
+     .bottom-left{
+        right:120px;
+        top: 20px; 
+     }
+     
+     .bottom-right{
+        left:130px;
+        top: 20px; 
+     
+     }
+     
+     
+     .top-left{
+        right:130px;
+        bottom: 0px; 
+     }
+     
+     .top-right{
+        left:130px;
+        bottom: 50px; 
+     
+     }
+
+
 
     .background-logo h4{
       
@@ -1051,6 +1094,9 @@ margin: auto;
         display: none;
       }
 
+      .subscribe-box{
+        padding: 0px 20px;
+     }
 
 
     .subscribe-box h5{
@@ -1111,7 +1157,7 @@ margin: auto;
 
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 570px) {
     .header{
         padding: 40px 0px 0px 0px;
     }
@@ -1140,6 +1186,29 @@ margin: auto;
         /* border: solid; */
         
     }
+
+    .bottom-left{
+        right:100px;
+        top: 20px; 
+     }
+     
+     .bottom-right{
+        left:100px;
+        top: 20px; 
+     
+     }
+     
+     
+     .top-left{
+        right:100px;
+        bottom: 0px; 
+     }
+     
+     .top-right{
+        left:100px;
+        bottom: 50px; 
+     
+     }
 
 
     .hero .background-logo{
@@ -1384,8 +1453,7 @@ margin: auto;
 
 }
 
-
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 460px) {
     .header{
         padding: 40px 0px 0px 0px;
     }
@@ -1405,6 +1473,29 @@ margin: auto;
         top: 100px;  
         right:0px;
     }
+
+    .bottom-left{
+        right:60px;
+        top: 20px; 
+     }
+     
+     .bottom-right{
+        left:60px;
+        top: 20px; 
+     
+     }
+     
+     
+     .top-left{
+        right:60px;
+        bottom: 0px; 
+     }
+     
+     .top-right{
+        left:60px;
+        bottom: 50px; 
+     
+     }
 
     .hero{
        
@@ -1505,11 +1596,76 @@ margin: auto;
 
 }
 
-@media only screen and (max-width:280px){
+@media only screen and (max-width:380px){
+   
+    .bottom-left{
+        width:70px;
+        height: 70px;
+        right:80px;
+        top: 40px; 
+     }
+     
+     .bottom-right{
+        width:70px;
+        height: 70px;
+        left:80px;
+        top: 35px; 
+     
+     }
+     
+     
+     .top-left{
+        width:70px;
+        height: 70px;
+        right:80px;
+        bottom: 40px; 
+     }
+     
+     .top-right{
+        width:50px;
+        height: 50px;
+        left:80px;
+        bottom: 70px;    
+     }
+   
+}
+
+@media only screen and (max-width:320px){
+
     .subscribe-section{
-        margin-top: 330px;
-        
+        margin-top: 400px;
     }
+   
+    .bottom-left{
+        width:70px;
+        height: 70px;
+        right:50px;
+        top: 40px; 
+     }
+     
+     .bottom-right{
+        width:70px;
+        height: 70px;
+        left:50px;
+        top: 35px; 
+     
+     }
+     
+     
+     .top-left{
+        width:70px;
+        height: 70px;
+        right:50px;
+        bottom: 40px; 
+     }
+     
+     .top-right{
+        width:50px;
+        height: 50px;
+        left:50px;
+        bottom: 70px;    
+     }
+   
 }
   
   
